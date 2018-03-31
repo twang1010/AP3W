@@ -1,2 +1,9 @@
 1, where is the python library installed by pip?
     C:\Python3.5\Lib\site-packages
+2. MySQL root password: root123
+3. Reset MYSQL password:
+    3.1 stop MYSQL service in Control Panel
+    3.2 save ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass'; as a file, say c:\\mysql-init.txt
+    3.3 start cmd, in cmd run:
+        C:\> cd "C:\Program Files\MySQL\MySQL Server 5.7\bin"
+        C:\> mysqld --init-file=C:\\mysql-init.txt
